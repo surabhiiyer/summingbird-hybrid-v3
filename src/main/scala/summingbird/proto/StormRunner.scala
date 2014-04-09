@@ -133,6 +133,7 @@ object StormRunner {
     res8: Option[Long] = Some(1779)
     }}}
     */
+
   def lookup(lookId: Long): Option[Long] =
     Await.result {
       viewCountStore.get(lookId -> ViewCount.batcher.currentBatch)

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="SBT: com.twitter:summingbird-storm_2.10:0.4.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/com.twitter/summingbird-storm_2.10/jars/summingbird-storm_2.10-0.4.1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.ivy2/cache/com.twitter/summingbird-storm_2.10/docs/summingbird-storm_2.10-0.4.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/com.twitter/summingbird-storm_2.10/srcs/summingbird-storm_2.10-0.4.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
