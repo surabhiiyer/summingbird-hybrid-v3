@@ -32,7 +32,7 @@ libraryDependencies ++= Seq(
   //"com.twitter" %% "tormenta-kafka" % tormentaVersion,
   "com.twitter" %% "tormenta-core" % tormentaVersion,
   // sigh... https://issues.apache.org/jira/browse/KAFKA-974
-  "org.apache.kafka" %% "kafka" % "0.8.0"
+  "org.apache.kafka" %% "kafka" % "0.8.1"
     exclude("javax.jms", "jms")
     exclude("com.sun.jdmk", "jmxtools")
     exclude("com.sun.jmx", "jmxri")
