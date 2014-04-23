@@ -8,10 +8,10 @@ package object proto {
 
   val random = new scala.util.Random
 
-  val JobDir = "/tmp/summingbird-proto/"
+  val JobDir = "summingbird/tmp/summingbird-proto/"
   val DataDir = JobDir + "data/"
 
-  val KafkaZkConnectionString = "localhost:2181/kafka"
+  val KafkaZkConnectionString = "stage-pf8.stage.ch.flipkart.com:2181/kafka/bigfoot/fireball_1"
   val KafkaTopic = "summingbird.proto.productview"
 
   val MaxId = 10
