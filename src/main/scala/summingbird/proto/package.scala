@@ -12,8 +12,8 @@ package object proto {
   val DataDir = JobDir + "data/"
 
   val KafkaZkConnectionString = "stage-pf8.stage.ch.flipkart.com:2181/kafka/bigfoot/fireball_1"
-  val KafkaTopic = "summingbird.proto.productview"
-
+  //val KafkaTopic = "summingbird.proto.productview"
+  val KafkaTopic = "be.oms.b2c.orders"
   val MaxId = 10
 
   val DataFileDateFormat = new SimpleDateFormat("yyyyMMdd-HHmmss")
