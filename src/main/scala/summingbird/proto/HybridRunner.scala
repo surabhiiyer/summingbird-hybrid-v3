@@ -97,9 +97,9 @@ object RunHybrid extends App {
 
 
   // start message generator
- // executor.submit(new Runnable {
- //   def run = try { DummyClickstream.run() } catch { case e: Throwable => logger.error("dummy clickstream error", e) }
-//  })
+ executor.submit(new Runnable {
+    def run = try { DummyClickstream.run() } catch { case e: Throwable => logger.error("dummy clickstream error", e) }
+  })
 
   // Run the batch job after each log file is available
   executor.submit(new Runnable {
