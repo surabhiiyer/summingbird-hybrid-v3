@@ -2,15 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9e2a8a2-9082-4017-8361-a817e3bf579a" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__jline_jline_0_9_94.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_kafka_kafka_2_10_0_8_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_scala_lang_scala_compiler_2_10_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_scala_lang_scala_reflect_2_10_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_slf4j_slf4j_simple_1_6_4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_xerial_snappy_snappy_java_1_0_4_1.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.sbt" afterPath="$PROJECT_DIR$/build.sbt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/scala/summingbird/proto/DummyBatchData.scala" afterPath="$PROJECT_DIR$/src/main/scala/summingbird/proto/BatchFiles.scala" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/scala/summingbird/proto/DummyClickstream.scala" afterPath="$PROJECT_DIR$/src/main/scala/summingbird/proto/ProduceOrders.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/summingbird/proto/ScaldingRunner.scala" afterPath="$PROJECT_DIR$/src/main/scala/summingbird/proto/ScaldingRunner.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/summingbird/proto/package.scala" afterPath="$PROJECT_DIR$/src/main/scala/summingbird/proto/package.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sbt.xml" afterPath="$PROJECT_DIR$/.idea/sbt.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/summingbird-proto.iml" afterPath="$PROJECT_DIR$/.idea/modules/summingbird-proto.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="summingbird-proto.iws" />
@@ -78,7 +78,7 @@
       <file leaf-file-name="ExampleJob.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/summingbird/proto/ExampleJob.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="11" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="600">
+            <state line="23" column="24" selection-start="667" selection-end="675" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="600">
               <folding />
             </state>
           </provider>
@@ -87,7 +87,7 @@
       <file leaf-file-name="HybridRunner.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/summingbird/proto/HybridRunner.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="65" column="7" selection-start="1699" selection-end="1699" vertical-scroll-proportion="0.0" vertical-offset="975" max-vertical-offset="2175">
+            <state line="73" column="0" selection-start="1965" selection-end="2084" vertical-scroll-proportion="0.0" vertical-offset="1095" max-vertical-offset="2160">
               <folding />
             </state>
           </provider>
@@ -96,43 +96,43 @@
       <file leaf-file-name="Ingestion.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/summingbird/proto/Ingestion.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="56" selection-start="486" selection-end="509" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="1455">
+            <state line="17" column="20" selection-start="377" selection-end="377" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="1365">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/summingbird/proto/package.scala">
+      <file leaf-file-name="Awaitable.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.ivy2/cache/com.twitter/util-core_2.10/srcs/util-core_2.10-6.12.1-sources.jar!/com/twitter/util/Awaitable.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="0" selection-start="1305" selection-end="1305" vertical-scroll-proportion="0.0" vertical-offset="446" max-vertical-offset="810">
+            <state line="68" column="6" selection-start="1747" selection-end="1747" vertical-scroll-proportion="0.0" vertical-offset="1020" max-vertical-offset="1965">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ScaldingRunner.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/summingbird/proto/ScaldingRunner.scala">
+      <file leaf-file-name="StringLike.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.10.3-sources.jar!/scala/collection/immutable/StringLike.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="0" selection-start="1255" selection-end="1255" vertical-scroll-proportion="0.0" vertical-offset="570" max-vertical-offset="3030">
+            <state line="264" column="6" selection-start="9400" selection-end="9400" vertical-scroll-proportion="0.0" vertical-offset="3960" max-vertical-offset="4350">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StormRunner.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/summingbird/proto/StormRunner.scala">
+      <file leaf-file-name="ScaldingPlatform.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.ivy2/cache/com.twitter/summingbird-scalding_2.10/srcs/summingbird-scalding_2.10-0.4.1-sources.jar!/com/twitter/summingbird/scalding/ScaldingPlatform.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="81" column="114" selection-start="2854" selection-end="2984" vertical-scroll-proportion="0.0" vertical-offset="1215" max-vertical-offset="2205">
+            <state line="58" column="6" selection-start="2030" selection-end="2030" vertical-scroll-proportion="0.0" vertical-offset="870" max-vertical-offset="10155">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.sbt" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/build.sbt">
+      <file leaf-file-name="Producer.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.ivy2/cache/com.twitter/summingbird-core_2.10/srcs/summingbird-core_2.10-0.4.1-sources.jar!/com/twitter/summingbird/Producer.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="9" selection-start="1207" selection-end="1207" vertical-scroll-proportion="0.4688347" vertical-offset="337" max-vertical-offset="795">
+            <state line="47" column="6" selection-start="1587" selection-end="1587" vertical-scroll-proportion="0.0" vertical-offset="705" max-vertical-offset="4725">
               <folding />
             </state>
           </provider>
@@ -147,20 +147,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DummyBatchData.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/summingbird/proto/DummyBatchData.scala">
+      <file leaf-file-name="BatchFiles.scala" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/summingbird/proto/BatchFiles.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="25" selection-start="370" selection-end="380" vertical-scroll-proportion="0.0" vertical-offset="186" max-vertical-offset="615">
-              <folding />
+            <state line="5" column="17" selection-start="94" selection-end="94" vertical-scroll-proportion="0.23961662" vertical-offset="0" max-vertical-offset="615">
+              <folding>
+                <element signature="e#27#53#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DummyClickstream.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/summingbird/proto/DummyClickstream.scala">
+      <file leaf-file-name="ProduceOrders.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/summingbird/proto/ProduceOrders.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="22" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0" vertical-offset="246" max-vertical-offset="615">
-              <folding />
+            <state line="10" column="1" selection-start="250" selection-end="250" vertical-scroll-proportion="-2.7777777" vertical-offset="0" max-vertical-offset="615">
+              <folding>
+                <element signature="e#27#89#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -181,6 +185,11 @@
         <option value="$PROJECT_DIR$/src/main/scala/summingbird/proto/StormRunner.scala" />
         <option value="$PROJECT_DIR$/project/build.properties" />
         <option value="$PROJECT_DIR$/build.sbt" />
+        <option value="$PROJECT_DIR$/src/main/scala/summingbird/proto/DummyClickstream.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/summingbird/proto/package.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/summingbird/proto/ScaldingRunner.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/summingbird/proto/ProduceOrders.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/summingbird/proto/BatchFiles.scala" />
       </list>
     </option>
   </component>
@@ -215,6 +224,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -234,7 +244,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="summingbird-hybrid" />
+              <option name="myItemId" value="summingbird-hybrid-v3" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -244,55 +254,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="summingbird-hybrid" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tmp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="summingbird-proto" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="summingbird-proto" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="summingbird-hybrid" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scala" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="proto" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StormRunner.scala" />
-              <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="summingbird-proto" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="summingbird-hybrid" />
+              <option name="myItemId" value="summingbird-hybrid-v3" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -318,7 +280,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="summingbird-hybrid" />
+              <option name="myItemId" value="summingbird-hybrid-v3" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -348,37 +310,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="summingbird-hybrid" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scala" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="proto" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="package.scala" />
-              <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="summingbird-proto" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="summingbird-hybrid" />
+              <option name="myItemId" value="summingbird-hybrid-v3" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -408,7 +340,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="summingbird-hybrid" />
+              <option name="myItemId" value="summingbird-hybrid-v3" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -438,7 +370,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="summingbird-hybrid" />
+              <option name="myItemId" value="summingbird-hybrid-v3" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -468,67 +400,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="summingbird-hybrid" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scala" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="proto" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DummyClickstream.scala" />
-              <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="summingbird-proto" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="summingbird-hybrid" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scala" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="proto" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DummyBatchData.scala" />
-              <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="summingbird-proto" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="summingbird-hybrid" />
+              <option name="myItemId" value="summingbird-hybrid-v3" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -550,7 +422,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="summingbird-hybrid" />
+              <option name="myItemId" value="summingbird-hybrid-v3" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -559,26 +431,11 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="summingbird-proto" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="summingbird-hybrid" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -592,7 +449,6 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
-    <property name="FullScreen" value="false" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin" singleton="true">
@@ -621,6 +477,14 @@
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
     <configuration default="true" type="Specs2RunConfiguration" factoryName="Specs2">
       <module name="" />
       <setting name="path" value="" />
@@ -632,27 +496,6 @@
       <setting name="testName" value="" />
       <setting name="testKind" value="Class" />
       <setting name="showProgressMessages" value="true" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -680,6 +523,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -716,6 +572,19 @@
       <patterns />
       <method />
     </configuration>
+    <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <method />
+    </configuration>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="ACTIVITY_CLASS" value="" />
@@ -733,19 +602,6 @@
       <option name="NETWORK_LATENCY" value="none" />
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <method />
-    </configuration>
-    <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
-      <module name="" />
-      <setting name="path" value="" />
-      <setting name="package" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="$PROJECT_DIR$" />
-      <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="testName" value="" />
-      <setting name="testKind" value="Class" />
-      <setting name="showProgressMessages" value="true" />
       <method />
     </configuration>
     <list size="0" />
@@ -772,11 +628,11 @@
           <value>
             <list>
               <ExternalProjectPojo>
-                <option name="name" value="summingbird-hybrid" />
+                <option name="name" value="summingbird-hybrid-v3" />
                 <option name="path" value="$PROJECT_DIR$" />
               </ExternalProjectPojo>
               <ExternalProjectPojo>
-                <option name="name" value="summingbird-hybrid-build" />
+                <option name="name" value="summingbird-hybrid-v3-build" />
                 <option name="path" value="$PROJECT_DIR$/project" />
               </ExternalProjectPojo>
             </list>
@@ -786,9 +642,12 @@
     </option>
     <option name="modificationStamps">
       <map>
+        <entry key="$USER_HOME$/hybrid" value="1398058115000" />
         <entry key="$USER_HOME$/summingbird" value="1391406077000" />
         <entry key="$USER_HOME$/summingbird-batch" value="1395917362000" />
+        <entry key="$USER_HOME$/summingbird-hybrid" value="1396868701000" />
         <entry key="$USER_HOME$/summingbird-hybrid-example" value="1396851853000" />
+        <entry key="$USER_HOME$/summingbird-hybrid-v2" value="1398837355000" />
       </map>
     </option>
   </component>
@@ -822,14 +681,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1280" height="713" extended-state="0" />
+    <frame x="0" y="22" width="1280" height="713" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3258427" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3268921" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -847,8 +706,8 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -868,6 +727,107 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/summingbird/proto/StormRunner.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="114" selection-start="2854" selection-end="2984" vertical-scroll-proportion="0.0" vertical-offset="1215" max-vertical-offset="2205" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.sbt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="9" selection-start="1207" selection-end="1207" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="795" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/build.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="1" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="180">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/summingbird/proto/BatchFiles.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="25" selection-start="370" selection-end="380" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="615">
+          <folding>
+            <element signature="e#27#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/summingbird/proto/ProduceOrders.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="47" selection-start="817" selection-end="827" vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="615">
+          <folding>
+            <element signature="e#27#89#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/summingbird/proto/ExampleJob.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="11" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="600">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/summingbird/proto/HybridRunner.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="7" selection-start="1699" selection-end="1699" vertical-scroll-proportion="0.0" vertical-offset="975" max-vertical-offset="2160">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/summingbird/proto/Ingestion.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="56" selection-start="486" selection-end="509" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="1455">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/summingbird/proto/package.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="0" selection-start="1397" selection-end="1397" vertical-scroll-proportion="0.0" vertical-offset="446" max-vertical-offset="810" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/summingbird/proto/ScaldingRunner.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="0" selection-start="1255" selection-end="1255" vertical-scroll-proportion="0.0" vertical-offset="570" max-vertical-offset="3030" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/summingbird/proto/StormRunner.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="114" selection-start="2854" selection-end="2984" vertical-scroll-proportion="0.0" vertical-offset="1215" max-vertical-offset="2205" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.sbt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="9" selection-start="1207" selection-end="1207" vertical-scroll-proportion="0.0" vertical-offset="337" max-vertical-offset="795" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/build.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="1" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="180">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/summingbird/proto/BatchFiles.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="25" selection-start="370" selection-end="380" vertical-scroll-proportion="0.0" vertical-offset="186" max-vertical-offset="615">
+          <folding>
+            <element signature="e#27#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/summingbird/proto/ProduceOrders.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="22" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0" vertical-offset="246" max-vertical-offset="615">
+          <folding>
+            <element signature="e#27#89#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/summingbird/proto/ExampleJob.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="11" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
@@ -891,30 +851,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/summingbird/proto/package.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="0" selection-start="1305" selection-end="1305" vertical-scroll-proportion="0.0" vertical-offset="446" max-vertical-offset="810">
-          <folding />
-        </state>
+        <state line="46" column="0" selection-start="1305" selection-end="1305" vertical-scroll-proportion="0.0" vertical-offset="446" max-vertical-offset="810" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/summingbird/proto/ScaldingRunner.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="0" selection-start="1255" selection-end="1255" vertical-scroll-proportion="0.0" vertical-offset="570" max-vertical-offset="3030">
-          <folding />
-        </state>
+        <state line="38" column="0" selection-start="1255" selection-end="1255" vertical-scroll-proportion="0.0" vertical-offset="570" max-vertical-offset="3030" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/summingbird/proto/StormRunner.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="114" selection-start="2854" selection-end="2984" vertical-scroll-proportion="0.0" vertical-offset="1215" max-vertical-offset="2205">
-          <folding />
-        </state>
+        <state line="81" column="114" selection-start="2854" selection-end="2984" vertical-scroll-proportion="0.0" vertical-offset="1215" max-vertical-offset="2205" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.sbt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="9" selection-start="1207" selection-end="1207" vertical-scroll-proportion="0.0" vertical-offset="230" max-vertical-offset="795">
-          <folding />
-        </state>
+        <state line="34" column="9" selection-start="1207" selection-end="1207" vertical-scroll-proportion="0.0" vertical-offset="230" max-vertical-offset="795" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/project/build.properties">
@@ -924,17 +876,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/summingbird/proto/DummyBatchData.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/summingbird/proto/BatchFiles.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="25" selection-start="370" selection-end="380" vertical-scroll-proportion="0.0" vertical-offset="186" max-vertical-offset="615">
-          <folding />
+          <folding>
+            <element signature="e#27#53#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/summingbird/proto/DummyClickstream.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/summingbird/proto/ProduceOrders.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="22" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0" vertical-offset="246" max-vertical-offset="615">
-          <folding />
+          <folding>
+            <element signature="e#27#89#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -961,30 +917,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/summingbird/proto/package.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="42" selection-start="1184" selection-end="1197" vertical-scroll-proportion="0.0" vertical-offset="441" max-vertical-offset="810">
-          <folding />
-        </state>
+        <state line="43" column="42" selection-start="1184" selection-end="1197" vertical-scroll-proportion="0.0" vertical-offset="441" max-vertical-offset="810" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/summingbird/proto/ScaldingRunner.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="0" selection-start="1255" selection-end="1255" vertical-scroll-proportion="0.0" vertical-offset="570" max-vertical-offset="3030">
-          <folding />
-        </state>
+        <state line="38" column="0" selection-start="1255" selection-end="1255" vertical-scroll-proportion="0.0" vertical-offset="570" max-vertical-offset="3030" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/summingbird/proto/StormRunner.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="114" selection-start="2854" selection-end="2984" vertical-scroll-proportion="0.0" vertical-offset="1215" max-vertical-offset="2205">
-          <folding />
-        </state>
+        <state line="81" column="114" selection-start="2854" selection-end="2984" vertical-scroll-proportion="0.0" vertical-offset="1215" max-vertical-offset="2205" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.sbt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="795">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="795" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/project/build.properties">
@@ -994,17 +942,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/summingbird/proto/DummyBatchData.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/summingbird/proto/BatchFiles.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="25" selection-start="370" selection-end="380" vertical-scroll-proportion="0.0" vertical-offset="186" max-vertical-offset="615">
-          <folding />
+          <folding>
+            <element signature="e#27#53#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/summingbird/proto/DummyClickstream.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/summingbird/proto/ProduceOrders.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="22" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0" vertical-offset="246" max-vertical-offset="615">
-          <folding />
+          <folding>
+            <element signature="e#27#89#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1015,51 +967,74 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/summingbird/proto/Serialization.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="7" selection-start="1289" selection-end="1289" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="750">
-          <folding>
-            <element signature="e#595#656#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="34" column="7" selection-start="1289" selection-end="1289" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="750" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/summingbird/proto/StormRunner.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="114" selection-start="2854" selection-end="2984" vertical-scroll-proportion="0.0" vertical-offset="1639" max-vertical-offset="1995">
-          <folding />
-        </state>
+        <state line="81" column="114" selection-start="2854" selection-end="2984" vertical-scroll-proportion="0.0" vertical-offset="1639" max-vertical-offset="1995" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.sbt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="9" selection-start="1207" selection-end="1207" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="795" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/summingbird/proto/package.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="23" selection-start="5664" selection-end="5670" vertical-scroll-proportion="0.0" vertical-offset="454" max-vertical-offset="810" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/summingbird/proto/ScaldingRunner.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="0" selection-start="1255" selection-end="1255" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="2955">
+        <state line="89" column="22" selection-start="2761" selection-end="2769" vertical-scroll-proportion="0.4090909" vertical-offset="1050" max-vertical-offset="2775" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/summingbird/proto/ExampleJob.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="24" selection-start="667" selection-end="675" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="585">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/summingbird/proto/HybridRunner.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="7" selection-start="1699" selection-end="1699" vertical-scroll-proportion="0.0" vertical-offset="1225" max-vertical-offset="2175">
+        <state line="73" column="0" selection-start="1965" selection-end="2084" vertical-scroll-proportion="0.0" vertical-offset="1095" max-vertical-offset="2160">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/summingbird/proto/Ingestion.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="56" selection-start="486" selection-end="509" vertical-scroll-proportion="0.0" vertical-offset="32" max-vertical-offset="1365">
+        <state line="17" column="20" selection-start="377" selection-end="377" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="1365">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/summingbird/proto/DummyClickstream.scala">
+    <entry file="jar://$USER_HOME$/.ivy2/cache/com.twitter/util-core_2.10/srcs/util-core_2.10-6.12.1-sources.jar!/com/twitter/util/Awaitable.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="22" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0" vertical-offset="246" max-vertical-offset="615">
+        <state line="68" column="6" selection-start="1747" selection-end="1747" vertical-scroll-proportion="0.0" vertical-offset="897" max-vertical-offset="1965">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/summingbird/proto/DummyBatchData.scala">
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.10.3-sources.jar!/scala/collection/immutable/StringLike.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="25" selection-start="370" selection-end="380" vertical-scroll-proportion="0.0" vertical-offset="186" max-vertical-offset="615">
+        <state line="264" column="6" selection-start="9400" selection-end="9400" vertical-scroll-proportion="0.0" vertical-offset="1572" max-vertical-offset="4200">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/com.twitter/summingbird-scalding_2.10/srcs/summingbird-scalding_2.10-0.4.1-sources.jar!/com/twitter/summingbird/scalding/ScaldingPlatform.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="6" selection-start="2030" selection-end="2030" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9435">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/com.twitter/summingbird-core_2.10/srcs/summingbird-core_2.10-0.4.1-sources.jar!/com/twitter/summingbird/Producer.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="6" selection-start="1587" selection-end="1587" vertical-scroll-proportion="0.0" vertical-offset="377" max-vertical-offset="4515">
           <folding />
         </state>
       </provider>
@@ -1071,24 +1046,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/summingbird/proto/package.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/summingbird/proto/ProduceOrders.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="0" selection-start="1305" selection-end="1305" vertical-scroll-proportion="0.0" vertical-offset="446" max-vertical-offset="810">
-          <folding />
+        <state line="10" column="1" selection-start="250" selection-end="250" vertical-scroll-proportion="-2.7777777" vertical-offset="0" max-vertical-offset="615">
+          <folding>
+            <element signature="e#27#89#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/summingbird/proto/ExampleJob.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/summingbird/proto/BatchFiles.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="11" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.sbt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="9" selection-start="1207" selection-end="1207" vertical-scroll-proportion="0.4688347" vertical-offset="337" max-vertical-offset="795">
-          <folding />
+        <state line="5" column="17" selection-start="94" selection-end="94" vertical-scroll-proportion="0.23961662" vertical-offset="0" max-vertical-offset="615">
+          <folding>
+            <element signature="e#27#53#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

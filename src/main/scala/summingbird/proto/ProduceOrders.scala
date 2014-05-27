@@ -6,15 +6,15 @@ import java.util.Properties
 
 import org.slf4j.LoggerFactory
 
-object RunDummyClickstream extends App {
-  DummyClickstream.run()
+object RunProduceOrders extends App {
+  ProduceOrders.run()
 }
 
-object DummyClickstream {
+object ProduceOrders {
   private val logger = LoggerFactory.getLogger(this.getClass)
 
   val props = new Properties()
-  props.put("metadata.broker.list", "localhost:9092")
+  props.put("metadata.broker.list", "stage-pf4.stage.ch.flipkart.com:9092,stage-pf5.stage.ch.flipkart.com:9092")
   props.setProperty("key.serializer.class", classOf[StringEncoder].getName)
 
   lazy val producer = new Producer[String, Array[Byte]](new ProducerConfig(props))

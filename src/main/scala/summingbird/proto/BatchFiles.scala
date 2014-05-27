@@ -3,7 +3,7 @@ package summingbird.proto
 import java.io.PrintWriter
 import java.util.Date
 
-object DummyBatch extends App {
+object BatchFiles extends App {
   import ViewCount._
 
   val now = System.currentTimeMillis

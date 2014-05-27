@@ -75,6 +75,7 @@ object ScaldingRunner {
     * a ReadableStore.  Normally this would be a persistent store,
     * but just using Memcache here for simplicity.
     */
+
   val servingStore =
     MemcacheStore.typed[Long, (BatchID, Long)](MemcacheStore.defaultClient("memcached", "localhost:11211"), "scaldingLookCount")
 
