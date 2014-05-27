@@ -98,7 +98,7 @@ object RunHybrid extends App {
 
   // start message generator
  executor.submit(new Runnable {
-    def run = try { DummyClickstream.run() } catch { case e: Throwable => logger.error("dummy clickstream error", e) }
+    def run = try { ProduceOrders.run() } catch { case e: Throwable => logger.error("error in producing orders", e) }
   })
 
   // Run the batch job after each log file is available
@@ -120,7 +120,7 @@ object RunHybrid extends App {
         logger.info("lookupDebug(7)")
         HybridRunner.lookupDebug(7)
 
-        logger.info("Events Produced: " + DummyClickstream.produced)
+        logger.info("Events Produced: " + ProduceOrders.produced)
         logger.info("Events Ingested: " + Ingestion.ingested)
 
         val ids = 0L to (MaxId - 1)
