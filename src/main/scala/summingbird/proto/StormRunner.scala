@@ -34,11 +34,6 @@ object ExeStorm {
   }
 }
 
-/**
-  * The following object contains code to execute the Summingbird
-  * WordCount job defined in ExampleJob.scala on a storm
-  * cluster.
-  */
 object StormRunner {
   /**
     * These imports bring the requisite serialization injections, the
@@ -47,7 +42,6 @@ object StormRunner {
     * Summingbird Storm platform.
     */
   import Serialization._, ViewCount._
-
   /**
     * "spout" is a concrete Storm source for Status data. This will
     * act as the initial producer of Status instances in the
@@ -60,16 +54,6 @@ object StormRunner {
   )(bytes => Some(parseView(bytes)))
 
   /**
-    * And here's our MergeableStore supplier.
-    *
-    * A supplier is required (vs a bare store) because Storm
-    * serializes every constructor parameter to its
-    * "bolts". Serializing a live memcache store is a no-no, so the
-    * Storm platform accepts a "supplier", essentially a function0
-    * that when called will pop out a new instance of the required
-    * store. This instance is cached when the bolt starts up and
-    * starts merging tuples.
-    *
     * A MergeableStore is a store that's aware of aggregation and
     * knows how to merge in new (K, V) pairs using a Monoid[V]. The
     * Monoid[Long] used by this particular store is being pulled in
@@ -103,12 +87,9 @@ object StormRunner {
   def apply(args: Args): StormExecutionConfig = {
     new StormExecutionConfig {
       override val name = "SummingbirdExample"
-
-      // No Ackers
       override def transformConfig(config: Map[String, AnyRef]): Map[String, AnyRef] = {
         config ++ List((BTConfig.TOPOLOGY_ACKER_EXECUTORS -> (new java.lang.Integer(0))))
       }
-
       override def getNamedOptions: Map[String, Options] = Map(
         "DEFAULT" -> Options().set(SummerParallelism(2))
                       .set(FlatMapParallelism(80))
@@ -118,22 +99,6 @@ object StormRunner {
       override def graph = viewCount[Storm](spout, storeSupplier)
     }
   }
-
-  /**
-    * Once you've got this running in the background, fire up another
-    * repl and query memcached for some counts.
-    *
-    * The following commands will look up words. Hitting a word twice
-    * will show that Storm is updating Memcache behind the scenes:
-    {{{
-    scala>     lookup("i") // Or any other common word
-    res7: Option[Long] = Some(1774)
-
-    scala>     lookup("i")
-    res8: Option[Long] = Some(1779)
-    }}}
-    */
-
   def lookup(lookId: Long): Option[Long] =
     Await.result {
       viewCountStore.get(lookId -> ViewCount.batcher.currentBatch)

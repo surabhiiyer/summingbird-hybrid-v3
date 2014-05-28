@@ -45,7 +45,7 @@ object Ingestion {
   def run(callback: () => Unit): Unit = {
 
     var currentFile: String = newCurrentFile
-    var buffer = Seq.empty[ProductViewed]
+    var buffer = Seq.empty[OrderViewed]
 
     for (stream <- streams) {
       val r = new Runnable() {
@@ -59,15 +59,15 @@ object Ingestion {
               if (newCurrentFile != currentFile) {
                 val writer = new PrintWriter(currentFile)
 
-                for (pdpView <- buffer) {
-                  writer.println(serializeView(pdpView))
+                for (orderView <- buffer) {
+                  writer.println(serializeView(orderView))
                 }
 
                 writer.close()
 
                 callback()
 
-                buffer = Seq.empty[ProductViewed]
+                buffer = Seq.empty[OrderViewed]
                 currentFile = newCurrentFile
               }
 

@@ -3,10 +3,10 @@ package summingbird.proto
 import com.twitter.summingbird._
 import com.twitter.summingbird.batch.Batcher
 
-case class ProductViewed (
+case class OrderViewed (
   val productId: Long,
   val requestTime: java.util.Date,
-  val userGuid: String
+  val orderjson: String
 )
 
 object ViewCount {
@@ -15,7 +15,7 @@ object ViewCount {
     * batch/realtime mode, across the boundary between storm and
     * scalding jobs.
     */
-  implicit val timeOf: TimeExtractor[ProductViewed] = TimeExtractor(_.requestTime.getTime)
+  implicit val timeOf: TimeExtractor[OrderViewed] = TimeExtractor(_.requestTime.getTime)
   //implicit val batcher = Batcher.ofHours(1)
   implicit val batcher = Batcher.ofMinutes(5)
 
@@ -26,9 +26,9 @@ object ViewCount {
     * Summingbird.
     */
   def viewCount[P <: Platform[P]](
-    source: Producer[P, ProductViewed],
+    source: Producer[P, OrderViewed],
     store: P#Store[Long, Long]) =
     source
-      .flatMap { event: ProductViewed => Seq((event.productId -> 1L)) }
+      .flatMap { event: OrderViewed => Seq((event.productId -> 1L)) }
       .sumByKey(store)
 }

@@ -15,7 +15,7 @@ import org.slf4j.LoggerFactory
 
 /**
   * The following object contains code to execute the Summingbird
-  * ViewCount job defined in ExampleJob.scala on a Scalding
+  * ViewCount job defined in SummingBirdJob.scala on a Scalding
   * cluster.
   */
 object ScaldingRunner {
@@ -52,12 +52,12 @@ object ScaldingRunner {
   }
 
   /**
-    * Creates a Source of ProductViewed events from the log files
+    * Creates a Source of OrderViewed events from the log files
     * for processing
     */
 
-  val pipe: PipeFactory[ProductViewed] = Scalding.mappedPipeFactory(sourceFactory) (parseView(_))
-  val source = Producer.source[Scalding, ProductViewed](pipe)
+  val pipe: PipeFactory[OrderViewed] = Scalding.mappedPipeFactory(sourceFactory) (parseView(_))
+  val source = Producer.source[Scalding, OrderViewed](pipe)
 
   /**
     * Store for results of batches.
@@ -96,6 +96,7 @@ object ScaldingRunner {
       * The first time, we need to specify to begin with the last completed
       * batch, but after that HDFSState should keep track for us.
       */
+
     val startTime = if (first) Some(batcher.earliestTimeOf(batch - 1L)) else None
     val waitingState = HDFSState(JobDir + "/waitstate", startTime = startTime)
 

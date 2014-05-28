@@ -7,9 +7,10 @@ import org.slf4j.LoggerFactory
 
 /**
   * The following object contains code to execute the Summingbird
-  * WordCount job defined in ExampleJob.scala on a hybrid
+  * WordCount job defined in on a hybrid
   * cluster.
   */
+
 object HybridRunner {
   @transient private val logger = LoggerFactory.getLogger(this.getClass)
 
@@ -90,13 +91,12 @@ object RunHybrid extends App {
 
 
   // start storm processing
-  // not really sure if this needs a separate thread or if storm.Executor does that
   executor.submit(new Runnable {
     def run = try { storm.Executor(Array("--local"), StormRunner(_)) } catch { case e: Throwable => logger.error("storm error", e) }
   })
 
 
-  // start message generator
+  // start generating ordes
  executor.submit(new Runnable {
     def run = try { ProduceOrders.run() } catch { case e: Throwable => logger.error("error in producing orders", e) }
   })
@@ -116,11 +116,11 @@ object RunHybrid extends App {
   executor.scheduleAtFixedRate(
     new Runnable {
       def run = { try {
-        logger.info("Sanity Check")
-        logger.info("lookupDebug(7)")
-        HybridRunner.lookupDebug(7)
+        //logger.info("Sanity Check")
+        //logger.info("lookupDebug(7)")
+        //HybridRunner.lookupDebug(7)
 
-        logger.info("Events Produced: " + ProduceOrders.produced)
+        //logger.info("Events Produced: " + ProduceOrders.produced)
         logger.info("Events Ingested: " + Ingestion.ingested)
 
         val ids = 0L to (MaxId - 1)

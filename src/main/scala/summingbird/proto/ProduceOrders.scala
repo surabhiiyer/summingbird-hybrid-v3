@@ -23,10 +23,10 @@ object ProduceOrders {
 
   def run() =
     while (true) {
-      val pdpView = randomView()
+      val orderView = randomView()
 
-      logger.debug(s"sending $pdpView")
-      producer.send(new KeyedMessage(KafkaTopic, pdpView.hashCode.toString, serializeView(pdpView).getBytes))
+      logger.debug(s"sending $orderView")
+      producer.send(new KeyedMessage(KafkaTopic, orderView.hashCode.toString, serializeView(orderView).getBytes))
       produced += 1
 
       Thread.sleep(1000)

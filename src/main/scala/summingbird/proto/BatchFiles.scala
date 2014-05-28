@@ -15,7 +15,7 @@ object BatchFiles extends App {
   while (current < now) {
     val date = new Date(current)
 
-    val pdpView = randomView(date)
+    val orderView = randomView(date)
 
     val fileName = dataFileForBatch(batcher.batchOf(date))
 
@@ -26,7 +26,7 @@ object BatchFiles extends App {
       currentWriter = new PrintWriter(fileName)
     }
 
-    currentWriter.println(serializeView(pdpView))
+    currentWriter.println(serializeView(orderView))
 
     current += 1000
   }
